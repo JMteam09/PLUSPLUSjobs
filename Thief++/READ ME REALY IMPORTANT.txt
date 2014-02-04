@@ -1,0 +1,18 @@
+JOBS to darkimodyfications --> customthings --> jobs or copy this text!! this job is only for donator! and copy it using NOTEPAD++:
+TEAM_CUSTOM = AddExtraTeam("Thief++", {
+	color = Color(149,88,232,255),
+	model = "models/player/Barney.mdl",
+	description = [[STEAL with better weapons]],
+	weapons = {"thief_plus" , "weapon_mad_knife", "lockpickpremium"},
+	command = "Thiefplus",
+	max = 999,
+	salary = 300,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+    customCheck = function(ply) return ply:GetNWString("usergroup") == "Donator" or ply:GetNWString("usergroup") == "superadmin" or ply:GetNWString("usergroup") == "Admin Team" end,
+	CustomCheckFailMsg = "This Job Is Donator Only!"
+})
+and the other maps go to:
+server folder -->garrysmod-->gamemodes-->DarkRP-->entities-->weapons
+good luck!
